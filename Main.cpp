@@ -125,7 +125,7 @@ int main() {
                 return midpointCache[edge];
 
             // This is where we calculate the midpoint and normalize it to lie on the sphere
-            //Adds the positions of the two vertices, divides by 2 → gets the geometric midpoint.
+            //Adds the positions of the two vertices, divides by 2 and gets the geometric midpoint.
             //normalize moves the midpoint onto the unit sphere. Without this, the vertices would create a “bulged” shape rather than a sphere
             //This creates a new vertex on the sphere
             glm::vec3 midpoint = glm::normalize((verts[a] + verts[b]) / 2.0f);
@@ -430,4 +430,5 @@ int main() {
 
 
 }
+
 
